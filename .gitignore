@@ -1,0 +1,9 @@
+# Composer-Abhängigkeiten
+/vendor/
+
+# Cache-Verzeichnis-Inhalt
+/thumb_cache/*
+!.gitignore
+
+# Konfigurationsdatei mit geheimen Schlüsseln
+/config.php

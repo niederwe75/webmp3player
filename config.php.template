@@ -1,0 +1,122 @@
+<?php
+
+// =================================================================
+// GRUNDEINSTELLUNGEN
+// =================================================================
+
+/**
+ * Der absolute Pfad zu deinem Musikverzeichnis auf dem Server.
+ * Wichtig: Gib den vollständigen Pfad an, nicht den relativen.
+ * Beispiel für Linux: '/srv/music' oder '/var/www/html/meineMusik'
+ * Beispiel für Windows: 'D:/Music'
+ */
+$musicDir = '/PFAD/ZU/DEINEM/MUSIKVERZEICHNIS';
+
+/**
+ * Ein Array von Dateimustern, nach denen gescannt werden soll.
+ * Du kannst hier weitere Formate hinzufügen, die von getID3 unterstützt werden.
+ */
+$fileTypes = [
+    '*.mp3',
+    '*.flac',
+    '*.m4a'
+];
+
+
+// =================================================================
+// THUMBNAIL-EINSTELLUNGEN
+// =================================================================
+
+/**
+ * Das Verzeichnis, in dem die zwischengespeicherten Cover-Bilder
+ * gespeichert werden sollen. Dieses Verzeichnis muss für den
+ * Webserver-Benutzer (z.B. www-data) beschreibbar sein.
+ */
+$thumbnailCacheDir = __DIR__ . '/thumb_cache';
+
+/**
+ * Die öffentliche URL, unter der das Cache-Verzeichnis erreichbar ist.
+ * In der Regel ist dies einfach der Name des Ordners.
+ */
+$thumbnailPublicUrlBase = 'thumb_cache';
+
+/**
+ * Die Größe der quadratischen Thumbnails in Pixeln.
+ * Ein guter Wert ist z.B. 50.
+ */
+$thumbnailSize = 50;
+
+
+// =================================================================
+// API-EINSTELLUNGEN (OPTIONAL)
+// =================================================================
+
+/**
+ * Dein API-Schlüssel für die Google Gemini API.
+ * Wird für die KI-gestützte Suche benötigt.
+ * Lasse den Wert leer (''), um die Funktion zu deaktivieren.
+ */
+$geminiApiKey = 'DEIN_GEMINI_API_SCHLUESSEL_HIER_EINFUEGEN';
+
+
+// =================================================================
+// WEBRADIO-SENDER
+// =================================================================
+
+/**
+ * Eine Liste von Webradio-Sendern.
+ * Jeder Sender ist ein Array mit 'id', 'name', 'streamUrl' und 'logoUrl'.
+ */
+$radioStations = [
+    [
+        'id' => '1live',
+        'name' => '1LIVE',
+        'streamUrl' => 'http://wdr-1live-live.icecast.wdr.de/wdr/1live/live/mp3/128/stream.mp3',
+        'logoUrl' => 'logos/1live.svg'
+    ],
+    [
+        'id' => 'ndr2',
+        'name' => 'NDR 2 NDS',
+        'streamUrl' => 'http://icecast.ndr.de/ndr/ndr2/niedersachsen/mp3/128/stream.mp3',
+        'logoUrl' => 'logos/ndr2.svg'
+    ],
+    [
+        'id' => 'dlf',
+        'name' => 'Deutschlandfunk',
+        'streamUrl' => 'https://st01.dlf.de/dlf/01/128/mp3/stream.mp3',
+        'logoUrl' => 'logos/dlf.svg'
+    ],
+    [
+        'id' => 'rockantenne',
+        'name' => 'Rock Antenne',
+        'streamUrl' => 'https://stream.rockantenne.de/rockantenne/stream/mp3',
+        'logoUrl' => 'logos/rockantenne.svg'
+    ],
+    [
+        'id' => 'klassikradio',
+        'name' => 'Klassik Radio',
+        'streamUrl' => 'https://stream.klassikradio.de/live/mp3-128',
+        'logoUrl' => 'logos/klassik.svg'
+    ],
+    [
+        'id' => 'sunshine',
+        'name' => 'Sunshine Live',
+        'streamUrl' => 'https://sunshinelive.hoerradar.de/sunshinelive-live-mp3-192',
+        'logoUrl' => 'logos/sunshine.svg'
+    ],
+    [
+        'id' => 'jamfm',
+        'name' => 'JAM FM',
+        'streamUrl' => 'https://stream.jam.fm/jamfm-live/mp3-192/play',
+        'logoUrl' => 'logos/jamfm.jpg'
+    ],
+    [
+        'id' => 'bob',
+        'name' => 'Radio BOB!',
+        'streamUrl' => 'https://streams.radiobob.de/bob-live/mp3-192/mediaplayer',
+        'logoUrl' => 'logos/bob.svg'
+    ],
+    // Füge hier bei Bedarf weitere Sender hinzu
+];
+
+
