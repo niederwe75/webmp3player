@@ -68,4 +68,4 @@ Die wichtigsten Optionen in der config.php:
 
 ## **📄 Lizenz**
 
-Dieses Projekt steht unter der MIT-Lizenz. Siehe die LICENSE-Datei für weitere Details.
+Dieses Projekt steht unter der GNU General Public License v3.0. Siehe die LICENSE-Datei für weitere Details.
