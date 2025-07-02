@@ -2,6 +2,8 @@
 
 Ein einfacher, aber funktionsreicher, dateibasierter Web-Player für deine lokale Musiksammlung und Webradio-Streams, geschrieben in reinem PHP und Vanilla JavaScript.
 
+![Image](https://github.com/user-attachments/assets/c5635589-8738-4b6d-8650-3fd39b799006)
+
 ## **✨ Features**
 
 * **Dateibasiert**: Scannt dein lokales Musikverzeichnis und stellt es in einer übersichtlichen Oberfläche dar.  
