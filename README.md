@@ -68,11 +68,12 @@ Die wichtigsten Optionen in der config.php:
 * $geminiApiKey: (Optional) Dein API-Schlüssel für die KI-Suche. Lasse ihn leer, um die Funktion zu deaktivieren.  
 * $radioStations: Ein PHP-Array, das die Konfigurationen für die Webradio-Sender enthält.
 
+## **📄 Lizenz**
+
+Dieses Projekt steht unter der GNU General Public License v3.0. Siehe die LICENSE-Datei für weitere Details.
+
 # **Entwicklungsprozess & KI-Nutzung**
 Dieses Projekt wurde maßgeblich unter Zuhilfenahme von KI-Werkzeugen (z.B. GitHub Copilot und anderen LLMs) entwickelt. Ich habe dabei die Rolle eines "AI-Assisted Software Developers" eingenommen, bei dem die KI als Programmier-Assistent fungiert.
 
 Jeder von der KI generierte Code wurde von mir sorgfältig geprüft, angepasst und getestet. Die endgültige Verantwortung für die Funktionalität, Qualität und Sicherheit des Codes liegt bei mir.
 
-## **📄 Lizenz**
-
-Dieses Projekt steht unter der GNU General Public License v3.0. Siehe die LICENSE-Datei für weitere Details.
